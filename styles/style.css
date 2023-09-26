@@ -312,3 +312,12 @@ body {
   max-width: 300px;
   text-align: start;
 }
+
+/* CSS FOR EDUCATION SECTION*/
+.contact  {
+  margin-left: 250px; 
+  font-size: 20px;
+  padding-left: 20px;
+  color: white;
+ 
+ }
