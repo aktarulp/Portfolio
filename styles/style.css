@@ -171,7 +171,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
-
 }
 .exp-info-card {
   border-left: 10px solid  #000851;
@@ -268,4 +267,11 @@ body {
 	right: 10px;
 	letter-spacing: 1px;
   cursor: pointer;
+}
+/* CSS FOR EDUCATION SECTION*/
+.accademic {
+  min-height: 600px;
+  min-width: 100%;
+  margin: 10px;
+  background-image: linear-gradient(red, green, blue);
 }
