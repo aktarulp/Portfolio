@@ -269,9 +269,53 @@ body {
   cursor: pointer;
 }
 /* CSS FOR EDUCATION SECTION*/
-.accademic {
+.education-container {
   min-height: 600px;
   min-width: 100%;
   margin: 10px;
   background-image: linear-gradient(red, green, blue);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis:50%;
+  width: 50%;
+  margin: 0;
+  }
+
+.education {
+  font-family:Tahoma;
+  display: flexbox;
+  color: white;
+  padding: 10px;
+  background-color: rgb(93, 3, 145);
+  max-width: 350px;
+  text-align: center;
+}
+.education h5 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  text-align: start;
+}
+.education h4 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-transform: uppercase;
+  display: block;
+  text-align: start;
+}
+.education img {
+  width: 100px;
+  height: auto;
+}
+
+.education-details {
+  font-family:Tahoma;
+  display: flexbox;
+  color: white;
+  padding: 10px;
+  background-color: rgb(93, 3, 145);
+  max-width: 300px;
+  text-align: start;
 }
