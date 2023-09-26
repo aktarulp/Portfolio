@@ -131,10 +131,12 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  text-align: center;
 }
 .card-img {
   width: 150px;
   height: 150px;
+  text-align: center;
 }
 .flip-card {
   background-color: blue;
@@ -158,7 +160,18 @@ body {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front {
+  display: flexbox;
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  vertical-align: top;
+  color: #16437E;
+  text-align: center
+}
+.flip-card-back {
   display: flexbox;
   position: absolute;
   width: 98%;
@@ -169,7 +182,6 @@ body {
   color: #16437E;
   text-align: start;
 }
-
 .flip-card-front {
   background-color: silver;
   color: black;
