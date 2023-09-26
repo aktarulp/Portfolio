@@ -268,8 +268,6 @@ body {
 }
 /* CSS FOR EDUCATION SECTION*/
 .education-container {
-  min-width: 100%;
-  margin: 10px;
   background-image: linear-gradient(red, green, blue);
   display: flex;
   flex-wrap: nowrap;
@@ -284,7 +282,7 @@ body {
   background-color: #000851;
   text-align: center;
   border:1px solid #860a80 ;
-  padding: 15px;
+  padding: 10px;
 }
 .education h5 {
   margin-block-start: 0em;
