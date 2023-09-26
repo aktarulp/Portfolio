@@ -270,13 +270,11 @@ body {
 }
 /* CSS FOR EDUCATION SECTION*/
 .education-container {
-  min-height: 600px;
   min-width: 100%;
   margin: 10px;
   background-image: linear-gradient(red, green, blue);
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-basis:50%;
   width: 50%;
   margin: 0;
@@ -284,12 +282,13 @@ body {
 
 .education {
   font-family:Tahoma;
-  display: flexbox;
   color: white;
   padding: 10px;
-  background-color: rgb(93, 3, 145);
-  max-width: 350px;
+  margin: 10px;
+  background-color: #000851;
   text-align: center;
+  width: 100%;
+  border:1px solid #860a80 ;
 }
 .education h5 {
   margin-block-start: 0em;
@@ -301,21 +300,17 @@ body {
 .education h4 {
   margin-block-start: 0em;
   margin-block-end: 0em;
-  text-transform: uppercase;
-  display: block;
+
   text-align: start;
 }
 .education img {
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 150px
 }
 
 .education-details {
   font-family:Tahoma;
-  display: flexbox;
-  color: white;
   padding: 10px;
-  background-color: rgb(93, 3, 145);
   max-width: 300px;
   text-align: start;
 }
