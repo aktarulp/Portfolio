@@ -273,9 +273,7 @@ body {
   background-image: linear-gradient(red, green, blue);
   display: flex;
   flex-wrap: nowrap;
-  flex-basis:50%;
-  width: 50%;
-  margin: 0;
+  margin-left: 250px;
   }
 
 .education {
@@ -285,8 +283,8 @@ body {
   margin: 10px;
   background-color: #000851;
   text-align: center;
-  width: 100%;
   border:1px solid #860a80 ;
+  padding: 15px;
 }
 .education h5 {
   margin-block-start: 0em;
