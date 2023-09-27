@@ -1,8 +1,7 @@
 body {
     font-family:  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    
-    background-image: url(../images/black-bg.PNG);
-    background-repeat:;
+    background-color: #348AC6;
+    background-size: cover;
 
   }  
   
@@ -15,7 +14,7 @@ body {
     top: 0;
     left: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(aqua,violet);
+    background-color: #000851;
   }
   
   .sidenav a {
@@ -104,10 +103,12 @@ body {
   text-align: center;
 }
 .flip-card {
-  background-color: blue;
+  /*background-color: blue;*/
   width: 300px;
   height: 200px;
   perspective: 1200px;
+  border-radius: 25px;
+  padding: 10px;
 
 }
 
@@ -118,7 +119,6 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -128,28 +128,29 @@ body {
 .flip-card-front {
   display: flexbox;
   position: absolute;
-  width: 98%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   vertical-align: top;
-  color: #16437E;
   text-align: center
 }
 .flip-card-back {
   display: flexbox;
   position: absolute;
-  width: 98%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   vertical-align: top;
-  color: #16437E;
+  color: #0547d4;
   text-align: start;
+  border-radius: 25px;
 }
 .flip-card-front {
-  background-color:darkblue;
+  background-color:#9DA2EF;
   color: white;
+  border-radius: 25px;
 }
 
 .flip-card-back {
@@ -341,31 +342,104 @@ body {
 
  /*FORM RELATED CSS*/
  
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+.contact-container{
+    margin-left: 250px; 
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+   }
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+  .box {
+    padding: 5px;
+    box-sizing: border-box;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px solid darkblue;
+    align-items: center;
+    width: 450px;
+    background-color: white;
+  }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  .box h2 {
+    margin: 0px 0 -0.125rem;
+    padding: 0;
+    color: skyblue;
+    text-align: center;
+    color: #202124;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+  }
+
+  .box .inputBox {
+    position: relative;
+  }
+  
+  .box .inputBox input {
+    width: 93%;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 0.875rem;
+    border: 2px double darkblue;
+    background: transparent;
+    border-radius: 4px;
+    
+  }
+  
+  .box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: lightgray;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label,
+  .box .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: darkblue;
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .box .inputBox input:focus {
+    outline: none;
+    border: 2px double darkblue;
+  }
+  .box input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    width: 100px;
+    float: right;
+    
+  }
+  
+  .box input[type="submit"]:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+    width: 100px;
+    float: right;
+  }
+  
+  textarea {
+    resize: none;
+    border: 2px solid #000851;
+  }
+  
